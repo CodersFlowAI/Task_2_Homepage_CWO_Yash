@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER WORLD ORGANIZATION</title>
+    <link rel="stylesheet" href="{% static 'css/home.css'%}"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="{% static 'css/style0.css'%}">  -->
+    <!-- CSS only -->
+    </head>
+<body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <div class="icon-bar">
+    <a href="https://www.facebook.com/Cyber-World-Organisation-105132394747608" class="facebook"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/CyberWorldOrg" class="twitter"><i class="fa fa-twitter"></i></a>
+    <a href="https://instagram.com/cyberworldorg" class="instagram"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/cyber-world-org" class="linkedin"><i class="fa fa-linkedin"></i></a>
+    <a href="http://bit.ly/cyberpwned" class="youtube"><i class="fa fa-youtube"></i></a>
+    <!-- <a href="https://discord.gg/ZnXApXE" class="discord"><i class="fa fa-discord" aria-hidden="true"></i></a> -->
+  </div>
+
+
+   <div id="div2">
+		<div id="nav">
+			<div id="left">
+				<div ><img src="{% static 'images/cwo_logo.jpg'%}" height="60px" width="80px"></div>
+			</div>
+
+			<div id="right">
+				<ul >
+					<li class="cool-link"><a href="/">Home</a></li>
+					<li class="cool-link"><a href=#>Events</a></li>
+					<li class="cool-link"><a href="#">Experience</a></li>
+					<li class="cool-link"><a href="#">Register</a></li>
+					<li class="cool-link"><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+			<div style="clear:both;"></div>
+			</div> 
+      <div>
+      <div class="container">
+        <!-- <marquee behavior="" direction="right" scrollamount="10"><h4 style="color:aquamarine;font-size: 40px;font-style: italic;"><b>Cyber World Organisation</b></h4></marquee> -->
+
+              
+              
+              <h1 style="color:green; text-align:center;font-size: 35px;font-style: italic;"  id="h1">Welcome To Cyber World Organization</h1>
+              <br>
+              <img  src="{% static "images/cwo_all.jpg" %}" >
+            <br><br>
+            </div>
+
+    <div class="container" >
+    <div  id="div4">
+        <h2 style="color:blue; text-align:center">Overview</h2>
+        <p>This Is an Non-Profit Organisation, Started by Sumit Oneness & Piyush Kaushik. <br>
+          [Officially Registered under MSME Govt. of India with Udyam No.: UDYAM-DL-06-*******]<br>
+          Our Community moto, Spreading Cyber Awareness among the teens, noob hackers or Cybersecurity researchers.<br>
+          # Lead Advisor : - Mr. Raskhit Tandon (India's top Cyber Security Expert) Founder at HackDev Technology. </p>
+          
+          <br>
+    </div>
+    
+    <div  id="div5" >
+      <h2 style="color:blue">What we serves : </h2>
+      <ul>
+        <li>Crime Investigations on Online Frauds.</li>
+        <li>National Conferences, Webinars.</li>
+        <li>Free Training on Bug Bounty</li>
+        <li>Digital Forensics Workshops</li>
+        <li>Cyber Crime Investigations on real time cases</li>
+        <li>Cyber Laws and Acts</li>
+        <li>Security In Mobile & Computer devices</li>
+        <li>Cyber Awareness, Information & Media</li>
+      </ul>
+      
+    </div>
+    
+
+  </div>
+    <div class="container" >
+      <br><br><br>
+      <div id="div6">
+        <h2 style="color:yellow">Community Complete Infrastructure :</h2> 
+        <p>Our Community has single dominating active body "CYBER WORLD ORG" which consists of : 4 Severals SubDivisions.
+         </p>
+        <ul>
+          <li >N00B HACK3RS COMMUNITY,NHC - Hack3rs Community.</li>
+          <li>Cyber Suraksha - Information & Media.</li>
+          <li >Cyber Salvager- Digital Forensics.</li>
+          <li>Cyber Crime Agency - Cyber Crime Investigation.</li>
+          </ul><br>
+
+      </div>
+      <div id="div7">
+        <img  class="img1" src="{% static "images/NHC.png" %}" >
+        <img  class="img1" src="{% static "images/salvager.jpg" %}" >
+      </div>
+     
+    </div>
+    <div class="container" id="div3">
+      <br><br><br>
+      <h2 style="color:yellow">Our Community Supporters & Partners :</h2> 
+        
+        <ul>
+          <li >BeFojji - Operational Security Squad.</li>
+          <li>Anti Cyber Crime Society (Anti-Phishing Wing).</li>
+          <li >Gurugram Cyber Cell.</li>
+          <li>Bsides Maharashtra</li>
+          <li>CySec Alliance</li>
+          <li>Crime Free Bharat</li>
+          </ul><br><br>
+    </div>
+    
+    
+    
+  
+    <footer class="footer">
+      <div class="container" id="newsletter">
+        <p>For News Letter and Update of Events do Subscribe Here</p>
+        <form method="POST">
+            {{form.as_p}}
+            {% csrf_token %}
+          <input type="submit" class="btn btn-primary" value="Subscribe">
+        </form><br>
+      </div>
+
+        <div class="footer_resize">
+          <p class="lf">&copy; Copyright <a href="#">Cyber World Organisation</a>.</p>
+          <div class="clr"></div>
+        </div>
+      </footer>
+    </div>
+  
+</body>
+</html>
