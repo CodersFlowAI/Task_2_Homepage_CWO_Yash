@@ -36,13 +36,15 @@
 					<li class="cool-link"><a href="/">Home</a></li>
 					<li class="cool-link"><a href=#>Events</a></li>
 					<li class="cool-link"><a href="#">Experience</a></li>
-					<li class="cool-link"><a href="#">Register</a></li>
+					<li class="cool-link"><a href="cases">Register Crime</a></li>
 					<li class="cool-link"><a href="#">Contact Us</a></li>
 				</ul>
 			</div>
 			<div style="clear:both;"></div>
 			</div> 
+      
       <div>
+        {% block main_content %}
       <div class="container">
         <!-- <marquee behavior="" direction="right" scrollamount="10"><h4 style="color:aquamarine;font-size: 40px;font-style: italic;"><b>Cyber World Organisation</b></h4></marquee> -->
 
@@ -53,6 +55,8 @@
               <img  src="{% static "images/cwo_all.jpg" %}" >
             <br><br>
             </div>
+
+            
 
     <div class="container" >
     <div  id="div4">
@@ -118,11 +122,13 @@
     
     
     
+
+            {% endblock %}
   
     <footer class="footer">
       <div class="container" id="newsletter">
         <p>For News Letter and Update of Events do Subscribe Here</p>
-        <form method="POST">
+        <form  method="POST">
             {{form.as_p}}
             {% csrf_token %}
           <input type="submit" class="btn btn-primary" value="Subscribe">

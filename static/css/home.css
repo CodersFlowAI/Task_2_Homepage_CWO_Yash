@@ -27,7 +27,6 @@ padding: 0px;
 	width:100px;
 	height:40px;
 	list-style:none;
-	
 	color: white;
 	
 }
@@ -59,7 +58,8 @@ padding: 0px;
 }
 	
 #div2{
-	background-image:url("../images/back.png") ; 
+	background-image:url("../images/back.png") ;  
+	
 	background-repeat: repeat-y;
 	background-size: cover;
 
@@ -70,7 +70,11 @@ padding: 0px;
 	font-size: medium;
 	
 }
-
+#head{
+	color : white;
+	font-size: large;
+	padding-left: 30%;
+}
 #div6{
 	
 	color : white;
@@ -85,17 +89,28 @@ padding: 0px;
 	float:right;
 	width:500px;
 }
+/* footer h4 {
+	display: inline-block;
+	font-weight:bold;
+  	margin-right:1.5em;
+  } */
+
 h2 {
 	
 	color: blue;
+	text-align: center;
 	
   }
 
 .footer {
 	background-color:black;
-	height:120px;
+	
 	bottom: 0;
 	width: 100%;
+	clear: both;
+    
+    height: 120px;
+    
 }
 #div4{
 	
@@ -114,6 +129,7 @@ h2 {
 	padding-left: 780px;
 }
 #h1{
+	color:white;
 	text-align: center;
 	font-size:35px;
 }
@@ -122,14 +138,12 @@ h2 {
 	
 	color : white;
 	float:right;
-	
 	font-size: medium;
 	width:500px;
-	
-	
 }
-
-
+p{
+	color: white;
+}
 
 .icon-bar {
 	position: fixed;
@@ -188,3 +202,25 @@ h2 {
 	  width: 200px;
 	  height:200px;
   }
+
+.link1{
+	width:auto;
+	color:blue;
+	background:lightcyan;
+	font-weight:1000;
+	font-size: large;
+}
+.link2{
+	width:auto;
+	color:blue;
+	background:lightcyan;
+	font-weight:1000;
+	font-size: large;
+	
+}
+#ada{
+	/* background:linear-gradient(to left, orange,brown,red); */
+	background-image:url("../images/formback\ \(1\).jpg") ;  
+	
+}
+  

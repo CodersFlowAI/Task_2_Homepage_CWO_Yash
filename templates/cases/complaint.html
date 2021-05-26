@@ -1,0 +1,35 @@
+{% extends 'homepage/home.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block main_content %}
+<link rel="stylesheet" href="{% static 'css/home.css'%}">
+<div class="container">
+        <img  src="{% static "images/cwo_all.jpg" %}" >
+      <br><br>
+      </div>
+      <div class="container">
+        <h1 style="color:green; border-style: groove;text-align:center;font-weight:bold;background-color:lime">CYBER CRIME AGENCY</h1>
+      </div>
+      
+
+<div class="container" id="head">
+  <br>
+  <br>
+<a class="link1"  href="cases">Register Case Anonymously</a>
+<a class="link2" href="report">Register Case</a>
+<br>
+<br>
+</div>
+<div class="container" id="ada">
+    <h2 style="color:blue; ">Register Anonymously </h2>
+    <form method="POST">
+        
+        {% csrf_token %}
+        {{ form1|crispy }}
+      <input type="submit" class="btn btn-primary" value="Submit">
+    </form><br>
+  </div>
+<br>
+<br>
+
+{% endblock %}

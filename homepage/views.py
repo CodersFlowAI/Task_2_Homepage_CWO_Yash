@@ -7,7 +7,7 @@ def homepage(request):
     form = NewsletterForm()
     
     if request.method == "POST":
-        form = NewUserForm(request.POST)
+        form = NewsletterForm(request.POST)
 
         if form.is_valid():
             form.save(commit=True)
